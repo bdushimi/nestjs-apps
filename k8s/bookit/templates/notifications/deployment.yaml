@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: notificaitons
+  name: notificaitons
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: notificaitons
+  template:
+    metadata:
+      labels:
+        app: notificaitons
+    spec:
+      containers:
+        - image: us-east1-docker.pkg.dev/bookit-416413/notifications/production
+          name: notifications

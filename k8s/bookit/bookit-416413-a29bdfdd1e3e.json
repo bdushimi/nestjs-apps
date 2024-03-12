@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "bookit-416413",
+  "private_key_id": "a29bdfdd1e3e05541850b32c92883314cbccf3a2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQChLqctxPT1dM51\nv3jYhkWGd5vu3GeL/5rtthJ06VRrBIH7CRbWMADM/lR5x+jl9DDl9T/vKVqtOjT9\nYtUoEXOmodSjj6oZXPO48D75f0Zg8qpuOL6jpuNvULu4JDNMrwVZJnU66mg3wIgT\nD3BUI1eJ+KBIrggjVuByM4fGNM40156qGc8rUcIe8Esg6q7a6RHvBLOXsXu+rdXd\nlvG6v5LhjRtknOMMOW1MaAE3tzGQF2VLwv2MxVRJgSRMScYRe/usRLM6TC9KwmDs\nX807qfjbxcEJus7GOKI4SbMR2vQrg6RhONWv66bcX1cQgCIuRQTxfCfhgwoiOO/2\nTwcLDOYpAgMBAAECggEAEvyT5OhWkrN3vpcXfSoT9osQa0q7R9qMPYQ9GFiEATc+\nuHuRnRl6fqtW+CF8ZdomCHCjX2DXtaAtrct+oIGtxes6SSobN3GjpB1ozasYd0Me\noG0+x7hZAjvYYRCiml3jm2TUWmRScn7TiKtA6Chhn3cSKn2Vp9QMDGfVjpuZzs+H\nkJFmgEjm+DcsqdHduppEmjURzKkuc9k6a1OdHoQmbTWyCQIjfkebb2XL9GQEGjfO\nKB4/5PLWEQ7+ybRaQP4AeemKM3uJEmNsmtTCJcHk9vPhc2LVcpBMltqJ9MCt1qlf\ni1PvxFRR8j8JK8JMDnxmBgIdawaFqKcYi9f6gCeJIQKBgQDUypMyTIFuQf5/GOxz\nb3xHbOetlhlfD7D1ye7z9wGeNpi0Sa8cBTaprOMxHK386tJVVlwP11vVN6sAN2nY\n3B9qmNSxwtKZxgDkewJTKIOVowGcv9dir7ZXsdwcHTykoUrvYfGSVZ9wVGN9l8Nk\nPd2s8qeyVOmRqYKkEkpWEV7SZwKBgQDB6U8y9z1iaqsRxKjTR5yRlsAKdWzEcS/e\nEZlixH7rVnUXTCInk8Y46X4R0uEhmodfBByl+cPbyk6V3ZdfXnjnS+BZo9pDFXPK\nfpWNW3BP0+4LHGHvfYOlR9mIp1VFeyBcPHGbJzo7FqyuZx0L6CotvD0iFEt0QRwg\nSVb8C+rI7wKBgAzYPZJns9hn+2jIpF1DeYkGNeXwjY+DbvcnPVlUq7BVM1qOqBdU\n6TvMx9oLFSWTNycXk28RXOW9+oCE18rTXsIcf5pLXFMT9LHWCwniBC9gK5S+r82x\nNZyNi+/Wg/acFd3lV6Oxr3IkZe0K4CyI33y1GRJWtdKpHM2ynPIdElA5AoGAZPgk\nWihtGSrrysO5GNKoDxMNCiUcrqk1QI+va8NfRxFsxOXKvwruY0IJeCRzP7kkFfCh\nLjeAqZiNFPIeWPVrRRy4RFTSWK357g29t65OK/Lxd22e/UJA4zYnakWfXB+BuSVs\nDlr9sjjbT7C3ajTIiaoDtxQUOgORLqqhlXprFZcCgYBGjGe1w9Yi01SsCO8VW1RO\nVdyUTjxraZOCQ9wQVfBEGy1QO31BG4fx+HOAa0l2hOYK+E75FebpVQLgJisEsUw3\n8A3KlO17wBF/DalOXMDeMQuPH/9vIylB4S2YnAqQDVLFnMgnH1FCAImtwsnymiJ9\nZWIs4h0P1aT5x5JclKCXXA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "artifact-image-pull@bookit-416413.iam.gserviceaccount.com",
+  "client_id": "104032014122094388258",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/artifact-image-pull%40bookit-416413.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

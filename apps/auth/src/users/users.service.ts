@@ -16,7 +16,7 @@ export class UsersService {
     await this.isUserUnique(createUserDto);
     return this.usersRepository.create({
       ...createUserDto,
-      password: await bcrypt.hashSync(createUserDto.password, 10),
+      password: bcrypt.hashSync(createUserDto.password, 10),
     });
   }
 
