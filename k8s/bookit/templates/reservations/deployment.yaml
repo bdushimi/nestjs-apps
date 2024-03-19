@@ -15,6 +15,23 @@ spec:
         app: reservations
     spec:
       containers:
-      - image: us-east1-docker.pkg.dev/bookit-416413/reservations/production
-        name: reservations
-
+        - image: us-east1-docker.pkg.dev/bookit-416413/reservations/production
+          name: reservations
+          env:
+            - name: MONGODB_URI
+              valueFrom:
+                secretKeyRef:
+                  name: mongodb
+                  key: connectionString
+            - name: AUTH_HOST
+              value: auth-tcp
+            - name: AUTH_PORT
+              value: '3003'
+            - name: PAYMENTS_HOST
+              value: payments
+            - name: PAYMENTS_PORT
+              value: '3001'
+            - name: HTTP_PORT
+              value: '3004'
+          ports:
+            - containerPort: 3004
