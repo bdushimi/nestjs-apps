@@ -15,19 +15,19 @@ spec:
         app: payments
     spec:
       containers:
-        - image: us-east1-docker.pkg.dev/bookit-416413/payments/production
+        - image: 637423224913.dkr.ecr.us-east-1.amazonaws.com/payments:latest
           name: payments
           env:
             - name: NOTIFICATIONS_HOST
               value: notifications
             - name: NOTIFICATIONS_PORT
-              value: "3000"
+              value: '3000'
             - name: PORT
-              value: "3001"
-            - name : STRIPE_SECRET_KEY
+              value: '3001'
+            - name: STRIPE_SECRET_KEY
               valueFrom:
                 secretKeyRef:
                   name: stripe
-                  key: apiKey  
+                  key: apiKey
           ports:
             - containerPort: 3001

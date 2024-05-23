@@ -15,7 +15,7 @@ spec:
         app: auth
     spec:
       containers:
-        - image: us-east1-docker.pkg.dev/bookit-416413/auth/production
+        - image: 637423224913.dkr.ecr.us-east-1.amazonaws.com/auth:latest
           name: auth
           env:
             - name: MONGODB_URI
@@ -24,16 +24,16 @@ spec:
                   name: mongodb
                   key: connectionString
             - name: JWT_EXPIRATION
-              value: "3600"
+              value: '3600'
             - name: JWT_SECRET
               valueFrom:
                 secretKeyRef:
                   name: jwt
                   key: jwtSecret
-            - name : HTTP_PORT
-              value: "3002"      
-            - name : TCP_PORT
-              value: "3003"
+            - name: HTTP_PORT
+              value: '3002'
+            - name: TCP_PORT
+              value: '3003'
           ports:
             - containerPort: 3002
-            - containerPort: 3003         
+            - containerPort: 3003
