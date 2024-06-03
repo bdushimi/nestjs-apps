@@ -33,6 +33,6 @@ services:
     env_file:
       - ../apps/notifications/.env
     ports:
-      - '3003:3003'
+      - '3004:3004'
   mongo:
     image: mongo
