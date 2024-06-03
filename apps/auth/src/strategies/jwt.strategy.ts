@@ -15,7 +15,9 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
       // this informs the strategy where the token is located on the incoming requests
       jwtFromRequest: ExtractJwt.fromExtractors([
         (request: any) =>
-          request?.cookies?.Authentication || request?.Authentication,
+          request?.cookies?.Authentication ||
+          request?.Authentication ||
+          request?.headers?.Authentication,
       ]),
       secretOrKey: configService.get('JWT_SECRET'),
     });
