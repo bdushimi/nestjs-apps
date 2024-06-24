@@ -2,7 +2,7 @@ import { Body, Controller, Get, Post, UseGuards } from '@nestjs/common';
 import { CurrentUser } from '@app/common';
 import { JwtAuthGuard } from '../guards/jwt-auth.guards';
 import { CreateUserDto } from './dto/create-user.dto';
-import { UserDocument } from '@app/common';
+import { UserEntity } from '@app/common';
 import { UsersService } from './users.service';
 
 @Controller('users')
@@ -15,7 +15,7 @@ export class UsersController {
 
   @Get()
   @UseGuards(JwtAuthGuard)
-  async getUser(@CurrentUser() user: UserDocument) {
+  async getUser(@CurrentUser() user: UserEntity) {
     return user;
   }
 }
