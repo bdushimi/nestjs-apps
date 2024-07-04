@@ -3,7 +3,7 @@ import { Column, Entity, JoinTable, ManyToMany } from 'typeorm';
 import { Role } from './role.entity';
 
 @Entity()
-export class UserEntity extends AbstractEntity<UserEntity> {
+export class User extends AbstractEntity<User> {
   @Column()
   email: string;
 

@@ -7,6 +7,7 @@ import * as bcrypt from 'bcryptjs';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UsersRepository } from './users.repository';
 import { GetUserDto } from './dto/get-user.dto';
+import { Role, User } from '@app/common';
 
 @Injectable()
 export class UsersService {
@@ -14,10 +15,12 @@ export class UsersService {
 
   async create(createUserDto: CreateUserDto) {
     await this.isUserUnique(createUserDto);
-    return this.usersRepository.create({
+    const user = new User({
       ...createUserDto,
       password: bcrypt.hashSync(createUserDto.password, 10),
+      roles: createUserDto.roles?.map((roleDto) => new Role(roleDto)),
     });
+    return this.usersRepository.create(user);
   }
 
   private async isUserUnique(createUserDto: CreateUserDto) {
@@ -45,6 +48,6 @@ export class UsersService {
   }
 
   async getUser(getUserDto: GetUserDto) {
-    return this.usersRepository.findOne(getUserDto);
+    return this.usersRepository.findOne(getUserDto, { roles: true });
   }
 }
