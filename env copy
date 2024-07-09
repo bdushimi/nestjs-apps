@@ -1,0 +1,2 @@
+MYSQL_DATABASE=bookit
+MYSQL_ROOT_PASSWORD=bookit_password
