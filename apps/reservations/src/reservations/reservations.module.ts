@@ -36,8 +36,11 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
         useFactory: (configService: ConfigService) => ({
           transport: Transport.RMQ,
           options: {
-            urls: [configService.getOrThrow<string>('RABBITMQ_URI')],
+            urls: [configService.getOrThrow<string>('RABBIT_MQ_URI')],
             queue: 'auth',
+            queueOptions: {
+              durable: true,
+            },
           },
         }),
         inject: [ConfigService],
@@ -47,8 +50,11 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
         useFactory: (configService: ConfigService) => ({
           transport: Transport.RMQ,
           options: {
-            urls: [configService.getOrThrow<string>('RABBITMQ_URI')],
+            urls: [configService.getOrThrow<string>('RABBIT_MQ_URI')],
             queue: 'payments',
+            queueOptions: {
+              durable: true,
+            },
           },
         }),
         inject: [ConfigService],

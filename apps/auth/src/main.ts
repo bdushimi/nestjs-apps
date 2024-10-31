@@ -12,8 +12,11 @@ async function bootstrap() {
   app.connectMicroservice({
     traspport: Transport.RMQ,
     options: {
-      urls: [configService.getOrThrow<string>('RABBITMQ_URI')],
+      urls: [configService.getOrThrow<string>('RABBIT_MQ_URI')],
       queue: 'auth',
+      queueOptions: {
+        durable: true,
+      },
     },
   });
   app.use(cookieParser());

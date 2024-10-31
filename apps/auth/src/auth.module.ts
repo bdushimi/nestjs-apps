@@ -1,4 +1,4 @@
-import { HealthModule, LoggerModule } from '@app/common';
+import { HealthModule, LoggerModule, RmqModule } from '@app/common';
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { JwtModule } from '@nestjs/jwt';
@@ -13,6 +13,7 @@ import { UsersModule } from './users/users.module';
   imports: [
     UsersModule,
     LoggerModule,
+    RmqModule,
     ConfigModule.forRoot({
       isGlobal: true,
       validationSchema: Joi.object({
